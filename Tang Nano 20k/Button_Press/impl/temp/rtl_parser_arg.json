@@ -1,0 +1,18 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Library" : "work",
+   "Path" : "D:/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

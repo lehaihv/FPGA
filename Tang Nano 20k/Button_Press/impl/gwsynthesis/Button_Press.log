@@ -1,0 +1,69 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file 'D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd'
+Analyzing entity 'button_press'("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":7)
+Analyzing architecture 'behavioral'("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":14)
+Processing 'button_press(Behavioral)'("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":7)
+WARN  (EX4749) : 'count_value_reg' should be on the sensitivity list of the process. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":28)
+WARN  (EX4749) : 'count_value_reg' should be on the sensitivity list of the process. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":29)
+WARN  (EX4749) : 'cnt_temp' should be on the sensitivity list of the process. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":30)
+WARN  (EX4387) : Incomplete sensitivity list specified, assuming completeness("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (EX4160) : Latch inferred for net 'CNT_temp[5]'("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+NOTE  (EX0101) : Current top module is "button_press"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[4]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[3]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[31]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[30]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[29]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[28]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[27]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[26]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[25]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[24]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[23]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[22]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[21]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[20]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[19]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[18]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[17]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[16]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[15]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[14]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[13]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[12]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[11]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[10]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[9]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[8]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[7]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[6]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[5]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[4]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[3]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'count_value_reg[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+WARN  (DI0003) : Latch inferred for net 'CNT_temp[5]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button.vhd":34)
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\gwsynthesis\Button_Press.vg" completed
+[100%] Generate report file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\gwsynthesis\Button_Press_syn.rpt.html" completed
+GowinSynthesis finish
