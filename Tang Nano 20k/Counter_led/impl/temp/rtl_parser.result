@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "D:/GitHub/FPGA/Tang Nano 20k/Counter_led/src/counter_4bits_led.vhd",
+  "InstLine" : 7,
+  "InstName" : "counter_6bits_led",
+  "ModuleFile" : "D:/GitHub/FPGA/Tang Nano 20k/Counter_led/src/counter_4bits_led.vhd",
+  "ModuleLine" : 7,
+  "ModuleName" : "counter_6bits_led"
+ }
+]
