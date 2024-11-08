@@ -1,9 +1,9 @@
 [
  {
-  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button.vhd",
+  "InstFile" : "D:/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button.vhd",
   "InstLine" : 7,
   "InstName" : "counter_6bits_led",
-  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button.vhd",
+  "ModuleFile" : "D:/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button.vhd",
   "ModuleLine" : 7,
   "ModuleName" : "counter_6bits_led"
  }
