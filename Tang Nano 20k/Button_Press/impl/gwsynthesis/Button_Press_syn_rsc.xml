@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="button_press" Register="38" Lut="79" T_Register="38(38)" T_Lut="79(79)"/>
+<Module name="counter_6bits_led" Register="40" Alu="36" Lut="18" T_Register="40(40)" T_Alu="36(36)" T_Lut="18(18)"/>

@@ -1,7 +1,7 @@
-Reading netlist file: "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\gwsynthesis\Button_Press.vg"
-Parsing netlist file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\gwsynthesis\Button_Press.vg" completed
+Reading netlist file: "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/gwsynthesis/Button_Press.vg"
+Parsing netlist file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/gwsynthesis/Button_Press.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\src\Button_Press.cst"
+Reading constraint file: "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/src/Button_Press.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -12,7 +12,7 @@ Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'press_key_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clock_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -21,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\pnr\Button_Press.power.html" completed
-Generate file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\pnr\Button_Press.pin.html" completed
-Generate file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\pnr\Button_Press.rpt.html" completed
-Generate file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\pnr\Button_Press.rpt.txt" completed
-Generate file "D:\GitHub\FPGA\Tang Nano 20k\Button_Press\impl\pnr\Button_Press.tr.html" completed
-Thu Nov  7 16:43:53 2024
+Generate file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/pnr/Button_Press.power.html" completed
+Generate file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/pnr/Button_Press.pin.html" completed
+Generate file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/pnr/Button_Press.rpt.html" completed
+Generate file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/pnr/Button_Press.rpt.txt" completed
+Generate file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Button_Press/impl/pnr/Button_Press.tr.html" completed
+Thu Nov  7 20:41:48 2024
 
