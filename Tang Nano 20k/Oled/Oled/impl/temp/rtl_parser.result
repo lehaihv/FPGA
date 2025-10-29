@@ -1,0 +1,30 @@
+[
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd",
+  "InstLine" : 4,
+  "InstName" : "top",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd",
+    "InstLine" : 15,
+    "InstName" : "u1",
+    "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "ssd1306_ctrl",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd",
+      "InstLine" : 37,
+      "InstName" : "i2c",
+      "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "i2c_master"
+     }
+    ]
+   }
+  ]
+ }
+]

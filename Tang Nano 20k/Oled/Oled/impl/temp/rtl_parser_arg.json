@@ -1,0 +1,28 @@
+{
+ "Device" : "GW2ANR-18C",
+ "Files" : [
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

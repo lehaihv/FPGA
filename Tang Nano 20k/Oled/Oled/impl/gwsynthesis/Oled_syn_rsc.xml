@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top">
+ <SubModule name="u1" Register="47" Lut="116">
+  <SubModule name="i2c" Register="53" Lut="108"/>
+ </SubModule>
+</Module>

@@ -13,7 +13,7 @@ end led;
 
 architecture Behavioral of led is
 -- constant value clock_freq = 27000000 (clock 27MHz)
-constant count_value: integer := 13499999;  -- the number of count to get 0.5 s
+constant count_value: integer := 200; --13499999;  -- the number of count to get 0.5 s
 -- signal
 signal count_value_reg : integer := 0; -- Counter value;
 signal count_value_flag : std_logic :='0';

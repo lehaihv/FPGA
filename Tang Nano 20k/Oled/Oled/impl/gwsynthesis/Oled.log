@@ -1,0 +1,36 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file '/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd'
+Analyzing entity 'i2c_master'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd":5)
+Analyzing architecture 'rtl'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd":20)
+Analyzing VHDL file '/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd'
+Analyzing entity 'ssd1306_ctrl'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd":5)
+Analyzing architecture 'rtl'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd":14)
+Analyzing VHDL file '/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd'
+Analyzing entity 'top'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd":4)
+Analyzing architecture 'rtl'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd":13)
+WARN  (EX4557) : Actual for formal port 'reset_n' is neither a static name nor a globally static expression("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd":18)
+Processing 'top(rtl)'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/top.vhd":4)
+Processing 'ssd1306_ctrl(rtl)'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd":5)
+Processing 'i2c_master(rtl)'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/i2c_master.vhd":5)
+Extracting RAM for identifier 'init_seq'("/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/src/ssd1306_ctrl.vhd":53)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/impl/gwsynthesis/Oled.vg" completed
+[100%] Generate report file "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/Oled/Oled/impl/gwsynthesis/Oled_syn.rpt.html" completed
+GowinSynthesis finish
