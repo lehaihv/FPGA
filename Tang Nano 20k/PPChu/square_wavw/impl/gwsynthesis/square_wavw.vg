@@ -1,0 +1,553 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.9"
+//Sat Nov 15 13:50:05 2025
+
+//Source file index table:
+//file0 "\/home/sonny/Documents/GitHub/FPGA/Tang\ Nano\ 20k/PPChu/square_wavw/src/square_wave_gen_fixed.vhd"
+`timescale 100 ps/100 ps
+module pwm_fixed_brightness (
+  clk,
+  reset,
+  led_pwm_out
+)
+;
+input clk;
+input reset;
+output led_pwm_out;
+wire clk_d;
+wire reset_d;
+wire pwm_signal_7;
+wire n27_6;
+wire n28_6;
+wire n29_6;
+wire n30_6;
+wire n31_6;
+wire n32_6;
+wire n33_6;
+wire n34_6;
+wire n35_6;
+wire n36_6;
+wire n37_6;
+wire n38_6;
+wire n39_6;
+wire n40_6;
+wire n41_6;
+wire n42_6;
+wire pwm_signal_8;
+wire pwm_signal_9;
+wire n7_69;
+wire n7_70;
+wire n27_7;
+wire n28_7;
+wire n29_7;
+wire n30_7;
+wire n31_7;
+wire n32_7;
+wire n33_7;
+wire n34_7;
+wire n37_7;
+wire n38_7;
+wire n39_7;
+wire n40_7;
+wire pwm_signal_10;
+wire pwm_signal_11;
+wire pwm_signal_12;
+wire n7_71;
+wire n7_72;
+wire n27_8;
+wire n27_9;
+wire n27_10;
+wire n31_8;
+wire n36_9;
+wire n35_9;
+wire n7_74;
+wire led_pwm_out_d;
+wire [15:0] pwm_counter;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF reset_ibuf (
+    .O(reset_d),
+    .I(reset) 
+);
+  OBUF led_pwm_out_obuf (
+    .O(led_pwm_out),
+    .I(led_pwm_out_d) 
+);
+  LUT4 pwm_signal_s3 (
+    .F(pwm_signal_7),
+    .I0(pwm_counter[10]),
+    .I1(pwm_counter[11]),
+    .I2(pwm_signal_8),
+    .I3(pwm_signal_9) 
+);
+defparam pwm_signal_s3.INIT=16'h80FF;
+  LUT4 n27_s2 (
+    .F(n27_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(pwm_counter[15]),
+    .I3(n27_7) 
+);
+defparam n27_s2.INIT=16'h0110;
+  LUT4 n28_s2 (
+    .F(n28_6),
+    .I0(n28_7),
+    .I1(pwm_counter[12]),
+    .I2(pwm_counter[15]),
+    .I3(pwm_counter[14]) 
+);
+defparam n28_s2.INIT=16'h0708;
+  LUT4 n29_s2 (
+    .F(n29_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n29_7),
+    .I3(pwm_counter[13]) 
+);
+defparam n29_s2.INIT=16'h0110;
+  LUT4 n30_s2 (
+    .F(n30_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n30_7),
+    .I3(pwm_counter[12]) 
+);
+defparam n30_s2.INIT=16'h0110;
+  LUT4 n31_s2 (
+    .F(n31_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(pwm_counter[11]),
+    .I3(n31_7) 
+);
+defparam n31_s2.INIT=16'h0110;
+  LUT4 n32_s2 (
+    .F(n32_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n32_7),
+    .I3(pwm_counter[10]) 
+);
+defparam n32_s2.INIT=16'h0110;
+  LUT4 n33_s2 (
+    .F(n33_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n33_7),
+    .I3(pwm_counter[9]) 
+);
+defparam n33_s2.INIT=16'h0110;
+  LUT4 n34_s2 (
+    .F(n34_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n34_7),
+    .I3(pwm_counter[8]) 
+);
+defparam n34_s2.INIT=16'h0110;
+  LUT4 n35_s2 (
+    .F(n35_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n35_9),
+    .I3(pwm_counter[7]) 
+);
+defparam n35_s2.INIT=16'h0110;
+  LUT4 n36_s2 (
+    .F(n36_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n36_9),
+    .I3(pwm_counter[6]) 
+);
+defparam n36_s2.INIT=16'h0110;
+  LUT4 n37_s2 (
+    .F(n37_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n37_7),
+    .I3(pwm_counter[5]) 
+);
+defparam n37_s2.INIT=16'h0110;
+  LUT4 n38_s2 (
+    .F(n38_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(pwm_counter[4]),
+    .I3(n38_7) 
+);
+defparam n38_s2.INIT=16'h0110;
+  LUT4 n39_s2 (
+    .F(n39_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n39_7),
+    .I3(pwm_counter[3]) 
+);
+defparam n39_s2.INIT=16'h0110;
+  LUT4 n40_s2 (
+    .F(n40_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(n40_7),
+    .I3(pwm_counter[2]) 
+);
+defparam n40_s2.INIT=16'h0110;
+  LUT4 n41_s2 (
+    .F(n41_6),
+    .I0(n7_69),
+    .I1(n7_70),
+    .I2(pwm_counter[1]),
+    .I3(pwm_counter[0]) 
+);
+defparam n41_s2.INIT=16'h0110;
+  LUT3 n42_s2 (
+    .F(n42_6),
+    .I0(pwm_counter[0]),
+    .I1(n7_69),
+    .I2(n7_70) 
+);
+defparam n42_s2.INIT=8'h01;
+  LUT4 pwm_signal_s4 (
+    .F(pwm_signal_8),
+    .I0(pwm_counter[1]),
+    .I1(pwm_signal_10),
+    .I2(pwm_signal_11),
+    .I3(pwm_signal_12) 
+);
+defparam pwm_signal_s4.INIT=16'h00BF;
+  LUT4 pwm_signal_s5 (
+    .F(pwm_signal_9),
+    .I0(pwm_counter[12]),
+    .I1(pwm_counter[13]),
+    .I2(pwm_counter[14]),
+    .I3(pwm_counter[15]) 
+);
+defparam pwm_signal_s5.INIT=16'h0001;
+  LUT4 n7_s49 (
+    .F(n7_69),
+    .I0(n38_7),
+    .I1(n7_71),
+    .I2(pwm_signal_12),
+    .I3(n7_72) 
+);
+defparam n7_s49.INIT=16'h8F00;
+  LUT3 n7_s50 (
+    .F(n7_70),
+    .I0(pwm_counter[14]),
+    .I1(pwm_counter[13]),
+    .I2(pwm_counter[15]) 
+);
+defparam n7_s50.INIT=8'hE0;
+  LUT4 n27_s3 (
+    .F(n27_7),
+    .I0(n27_8),
+    .I1(n38_7),
+    .I2(n27_9),
+    .I3(n27_10) 
+);
+defparam n27_s3.INIT=16'h8000;
+  LUT4 n28_s3 (
+    .F(n28_7),
+    .I0(pwm_counter[13]),
+    .I1(n38_7),
+    .I2(n27_9),
+    .I3(n27_10) 
+);
+defparam n28_s3.INIT=16'h8000;
+  LUT4 n29_s3 (
+    .F(n29_7),
+    .I0(pwm_counter[12]),
+    .I1(n38_7),
+    .I2(n27_9),
+    .I3(n27_10) 
+);
+defparam n29_s3.INIT=16'h8000;
+  LUT3 n30_s3 (
+    .F(n30_7),
+    .I0(n38_7),
+    .I1(n27_9),
+    .I2(n27_10) 
+);
+defparam n30_s3.INIT=8'h80;
+  LUT4 n31_s3 (
+    .F(n31_7),
+    .I0(n31_8),
+    .I1(pwm_counter[8]),
+    .I2(n38_7),
+    .I3(n27_9) 
+);
+defparam n31_s3.INIT=16'h8000;
+  LUT4 n32_s3 (
+    .F(n32_7),
+    .I0(pwm_counter[8]),
+    .I1(pwm_counter[9]),
+    .I2(n38_7),
+    .I3(n27_9) 
+);
+defparam n32_s3.INIT=16'h8000;
+  LUT3 n33_s3 (
+    .F(n33_7),
+    .I0(pwm_counter[8]),
+    .I1(n38_7),
+    .I2(n27_9) 
+);
+defparam n33_s3.INIT=8'h80;
+  LUT2 n34_s3 (
+    .F(n34_7),
+    .I0(n38_7),
+    .I1(n27_9) 
+);
+defparam n34_s3.INIT=4'h8;
+  LUT2 n37_s3 (
+    .F(n37_7),
+    .I0(pwm_counter[4]),
+    .I1(n38_7) 
+);
+defparam n37_s3.INIT=4'h8;
+  LUT4 n38_s3 (
+    .F(n38_7),
+    .I0(pwm_counter[1]),
+    .I1(pwm_counter[0]),
+    .I2(pwm_counter[2]),
+    .I3(pwm_counter[3]) 
+);
+defparam n38_s3.INIT=16'h8000;
+  LUT3 n39_s3 (
+    .F(n39_7),
+    .I0(pwm_counter[1]),
+    .I1(pwm_counter[0]),
+    .I2(pwm_counter[2]) 
+);
+defparam n39_s3.INIT=8'h80;
+  LUT2 n40_s3 (
+    .F(n40_7),
+    .I0(pwm_counter[1]),
+    .I1(pwm_counter[0]) 
+);
+defparam n40_s3.INIT=4'h8;
+  LUT4 pwm_signal_s6 (
+    .F(pwm_signal_10),
+    .I0(pwm_counter[0]),
+    .I1(pwm_counter[7]),
+    .I2(pwm_counter[8]),
+    .I3(pwm_counter[9]) 
+);
+defparam pwm_signal_s6.INIT=16'h0001;
+  LUT4 pwm_signal_s7 (
+    .F(pwm_signal_11),
+    .I0(pwm_counter[2]),
+    .I1(pwm_counter[3]),
+    .I2(pwm_counter[4]),
+    .I3(pwm_counter[5]) 
+);
+defparam pwm_signal_s7.INIT=16'h0001;
+  LUT4 pwm_signal_s8 (
+    .F(pwm_signal_12),
+    .I0(pwm_counter[6]),
+    .I1(pwm_counter[7]),
+    .I2(pwm_counter[8]),
+    .I3(pwm_counter[9]) 
+);
+defparam pwm_signal_s8.INIT=16'h0001;
+  LUT2 n7_s51 (
+    .F(n7_71),
+    .I0(pwm_counter[4]),
+    .I1(pwm_counter[5]) 
+);
+defparam n7_s51.INIT=4'h8;
+  LUT4 n7_s52 (
+    .F(n7_72),
+    .I0(pwm_counter[10]),
+    .I1(pwm_counter[11]),
+    .I2(pwm_counter[12]),
+    .I3(pwm_counter[15]) 
+);
+defparam n7_s52.INIT=16'h8000;
+  LUT3 n27_s4 (
+    .F(n27_8),
+    .I0(pwm_counter[12]),
+    .I1(pwm_counter[13]),
+    .I2(pwm_counter[14]) 
+);
+defparam n27_s4.INIT=8'h80;
+  LUT4 n27_s5 (
+    .F(n27_9),
+    .I0(pwm_counter[4]),
+    .I1(pwm_counter[5]),
+    .I2(pwm_counter[6]),
+    .I3(pwm_counter[7]) 
+);
+defparam n27_s5.INIT=16'h8000;
+  LUT4 n27_s6 (
+    .F(n27_10),
+    .I0(pwm_counter[8]),
+    .I1(pwm_counter[9]),
+    .I2(pwm_counter[10]),
+    .I3(pwm_counter[11]) 
+);
+defparam n27_s6.INIT=16'h8000;
+  LUT2 n31_s4 (
+    .F(n31_8),
+    .I0(pwm_counter[9]),
+    .I1(pwm_counter[10]) 
+);
+defparam n31_s4.INIT=4'h8;
+  LUT3 n36_s4 (
+    .F(n36_9),
+    .I0(n38_7),
+    .I1(pwm_counter[4]),
+    .I2(pwm_counter[5]) 
+);
+defparam n36_s4.INIT=8'h80;
+  LUT4 n35_s4 (
+    .F(n35_9),
+    .I0(pwm_counter[6]),
+    .I1(n38_7),
+    .I2(pwm_counter[4]),
+    .I3(pwm_counter[5]) 
+);
+defparam n35_s4.INIT=16'h8000;
+  LUT4 n7_s53 (
+    .F(n7_74),
+    .I0(n7_69),
+    .I1(pwm_counter[14]),
+    .I2(pwm_counter[13]),
+    .I3(pwm_counter[15]) 
+);
+defparam n7_s53.INIT=16'hFEAA;
+  DFFC pwm_counter_14_s0 (
+    .Q(pwm_counter[14]),
+    .D(n28_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_14_s0.INIT=1'b0;
+  DFFC pwm_counter_13_s0 (
+    .Q(pwm_counter[13]),
+    .D(n29_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_13_s0.INIT=1'b0;
+  DFFC pwm_counter_12_s0 (
+    .Q(pwm_counter[12]),
+    .D(n30_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_12_s0.INIT=1'b0;
+  DFFC pwm_counter_11_s0 (
+    .Q(pwm_counter[11]),
+    .D(n31_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_11_s0.INIT=1'b0;
+  DFFC pwm_counter_10_s0 (
+    .Q(pwm_counter[10]),
+    .D(n32_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_10_s0.INIT=1'b0;
+  DFFC pwm_counter_9_s0 (
+    .Q(pwm_counter[9]),
+    .D(n33_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_9_s0.INIT=1'b0;
+  DFFC pwm_counter_8_s0 (
+    .Q(pwm_counter[8]),
+    .D(n34_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_8_s0.INIT=1'b0;
+  DFFC pwm_counter_7_s0 (
+    .Q(pwm_counter[7]),
+    .D(n35_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_7_s0.INIT=1'b0;
+  DFFC pwm_counter_6_s0 (
+    .Q(pwm_counter[6]),
+    .D(n36_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_6_s0.INIT=1'b0;
+  DFFC pwm_counter_5_s0 (
+    .Q(pwm_counter[5]),
+    .D(n37_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_5_s0.INIT=1'b0;
+  DFFC pwm_counter_4_s0 (
+    .Q(pwm_counter[4]),
+    .D(n38_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_4_s0.INIT=1'b0;
+  DFFC pwm_counter_3_s0 (
+    .Q(pwm_counter[3]),
+    .D(n39_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_3_s0.INIT=1'b0;
+  DFFC pwm_counter_2_s0 (
+    .Q(pwm_counter[2]),
+    .D(n40_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_2_s0.INIT=1'b0;
+  DFFC pwm_counter_1_s0 (
+    .Q(pwm_counter[1]),
+    .D(n41_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_1_s0.INIT=1'b0;
+  DFFC pwm_counter_0_s0 (
+    .Q(pwm_counter[0]),
+    .D(n42_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_0_s0.INIT=1'b0;
+  DFFC pwm_counter_15_s0 (
+    .Q(pwm_counter[15]),
+    .D(n27_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam pwm_counter_15_s0.INIT=1'b0;
+  DFFCE pwm_signal_s1 (
+    .Q(led_pwm_out_d),
+    .D(n7_74),
+    .CLK(clk_d),
+    .CE(pwm_signal_7),
+    .CLEAR(reset_d) 
+);
+defparam pwm_signal_s1.INIT=1'b0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* pwm_fixed_brightness */

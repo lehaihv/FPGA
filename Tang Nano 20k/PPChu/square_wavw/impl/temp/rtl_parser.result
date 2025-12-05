@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/square_wavw/src/square_wave_gen_fixed.vhd",
+  "InstLine" : 5,
+  "InstName" : "pwm_fixed_brightness",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/square_wavw/src/square_wave_gen_fixed.vhd",
+  "ModuleLine" : 5,
+  "ModuleName" : "pwm_fixed_brightness"
+ }
+]

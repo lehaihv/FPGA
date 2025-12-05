@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/PWM_1/src/square_wave_gen.vhd",
+  "InstLine" : 5,
+  "InstName" : "square_wave_gen",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/PWM_1/src/square_wave_gen.vhd",
+  "ModuleLine" : 5,
+  "ModuleName" : "square_wave_gen"
+ }
+]

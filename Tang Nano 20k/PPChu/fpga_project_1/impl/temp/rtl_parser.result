@@ -1,0 +1,38 @@
+[
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2_testbench.vhd",
+  "InstLine" : 4,
+  "InstName" : "eq2_testbench",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2_testbench.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "eq2_testbench",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2_testbench.vhd",
+    "InstLine" : 15,
+    "InstName" : "uut",
+    "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "eq2",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2.vhd",
+      "InstLine" : 15,
+      "InstName" : "eq_bit0_unit",
+      "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq1.vhd",
+      "ModuleLine" : 4,
+      "ModuleName" : "eq1"
+     },
+     {
+      "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2.vhd",
+      "InstLine" : 17,
+      "InstName" : "eq_bit1_unit",
+      "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq1.vhd",
+      "ModuleLine" : 4,
+      "ModuleName" : "eq1"
+     }
+    ]
+   }
+  ]
+ }
+]

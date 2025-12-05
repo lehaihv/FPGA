@@ -1,0 +1,18 @@
+[
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/UART/UART/src/UART_RX.vhd",
+  "InstLine" : 18,
+  "InstName" : "UART_RX",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/UART/UART/src/UART_RX.vhd",
+  "ModuleLine" : 18,
+  "ModuleName" : "UART_RX"
+ },
+ {
+  "InstFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/UART/UART/src/UART_TX.vhd",
+  "InstLine" : 18,
+  "InstName" : "UART_TX",
+  "ModuleFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/UART/UART/src/UART_TX.vhd",
+  "ModuleLine" : 18,
+  "ModuleName" : "UART_TX"
+ }
+]

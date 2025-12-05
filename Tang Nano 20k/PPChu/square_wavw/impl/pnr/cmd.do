@@ -1,0 +1,12 @@
+-d /home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/square_wavw/impl/gwsynthesis/square_wavw.vg
+-p GW2ANR-18C-QFN88-8
+-pn GW2ANR-LV18QN88C8/I7
+-cst /home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/square_wavw/src/square_wavw.cst
+-cfg /home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/square_wavw/impl/pnr/device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

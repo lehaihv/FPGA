@@ -1,0 +1,276 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.9"
+//Sat Nov 15 13:06:22 2025
+
+//Source file index table:
+//file0 "\/home/sonny/Documents/GitHub/FPGA/Tang\ Nano\ 20k/PPChu/PWM_1/src/square_wave_gen.vhd"
+`timescale 100 ps/100 ps
+module square_wave_gen (
+  clk,
+  reset,
+  m_ctrl,
+  n_ctrl,
+  sq_wave
+)
+;
+input clk;
+input reset;
+input [3:0] m_ctrl;
+input [3:0] n_ctrl;
+output sq_wave;
+wire clk_d;
+wire reset_d;
+wire n32_3;
+wire n14_6;
+wire n15_6;
+wire n16_6;
+wire n17_6;
+wire n20_5;
+wire n20_6;
+wire n14_7;
+wire n15_7;
+wire n27_12;
+wire sq_wave_d;
+wire current_state;
+wire n12_9_SUM;
+wire n12_12;
+wire n12_10_SUM;
+wire n12_14;
+wire n12_11_SUM;
+wire n12_16;
+wire n19_9_SUM;
+wire n19_12;
+wire n19_10_SUM;
+wire n19_14;
+wire n19_11_SUM;
+wire n19_16;
+wire [3:0] m_ctrl_d;
+wire [3:0] n_ctrl_d;
+wire [3:0] counter;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF reset_ibuf (
+    .O(reset_d),
+    .I(reset) 
+);
+  IBUF m_ctrl_0_ibuf (
+    .O(m_ctrl_d[0]),
+    .I(m_ctrl[0]) 
+);
+  IBUF m_ctrl_1_ibuf (
+    .O(m_ctrl_d[1]),
+    .I(m_ctrl[1]) 
+);
+  IBUF m_ctrl_2_ibuf (
+    .O(m_ctrl_d[2]),
+    .I(m_ctrl[2]) 
+);
+  IBUF m_ctrl_3_ibuf (
+    .O(m_ctrl_d[3]),
+    .I(m_ctrl[3]) 
+);
+  IBUF n_ctrl_0_ibuf (
+    .O(n_ctrl_d[0]),
+    .I(n_ctrl[0]) 
+);
+  IBUF n_ctrl_1_ibuf (
+    .O(n_ctrl_d[1]),
+    .I(n_ctrl[1]) 
+);
+  IBUF n_ctrl_2_ibuf (
+    .O(n_ctrl_d[2]),
+    .I(n_ctrl[2]) 
+);
+  IBUF n_ctrl_3_ibuf (
+    .O(n_ctrl_d[3]),
+    .I(n_ctrl[3]) 
+);
+  OBUF sq_wave_obuf (
+    .O(sq_wave),
+    .I(sq_wave_d) 
+);
+  LUT3 n32_s0 (
+    .F(n32_3),
+    .I0(n20_5),
+    .I1(current_state),
+    .I2(n20_6) 
+);
+defparam n32_s0.INIT=8'hF1;
+  LUT3 n14_s2 (
+    .F(n14_6),
+    .I0(n20_5),
+    .I1(n20_6),
+    .I2(n14_7) 
+);
+defparam n14_s2.INIT=8'h10;
+  LUT4 n15_s2 (
+    .F(n15_6),
+    .I0(n20_5),
+    .I1(n20_6),
+    .I2(counter[2]),
+    .I3(n15_7) 
+);
+defparam n15_s2.INIT=16'h0110;
+  LUT4 n16_s2 (
+    .F(n16_6),
+    .I0(n20_5),
+    .I1(n20_6),
+    .I2(counter[1]),
+    .I3(counter[0]) 
+);
+defparam n16_s2.INIT=16'h0110;
+  LUT3 n17_s2 (
+    .F(n17_6),
+    .I0(counter[0]),
+    .I1(n20_5),
+    .I2(n20_6) 
+);
+defparam n17_s2.INIT=8'h01;
+  LUT4 n20_s1 (
+    .F(n20_5),
+    .I0(n12_16),
+    .I1(m_ctrl_d[3]),
+    .I2(counter[3]),
+    .I3(current_state) 
+);
+defparam n20_s1.INIT=16'h00B2;
+  LUT4 n20_s2 (
+    .F(n20_6),
+    .I0(counter[3]),
+    .I1(n_ctrl_d[3]),
+    .I2(n19_16),
+    .I3(current_state) 
+);
+defparam n20_s2.INIT=16'hB200;
+  LUT4 n14_s3 (
+    .F(n14_7),
+    .I0(counter[1]),
+    .I1(counter[0]),
+    .I2(counter[2]),
+    .I3(counter[3]) 
+);
+defparam n14_s3.INIT=16'h7F80;
+  LUT2 n15_s3 (
+    .F(n15_7),
+    .I0(counter[1]),
+    .I1(counter[0]) 
+);
+defparam n15_s3.INIT=4'h8;
+  LUT3 n27_s4 (
+    .F(n27_12),
+    .I0(current_state),
+    .I1(n20_5),
+    .I2(n20_6) 
+);
+defparam n27_s4.INIT=8'h56;
+  DFFC counter_3_s0 (
+    .Q(counter[3]),
+    .D(n14_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam counter_3_s0.INIT=1'b0;
+  DFFC counter_2_s0 (
+    .Q(counter[2]),
+    .D(n15_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam counter_2_s0.INIT=1'b0;
+  DFFC counter_1_s0 (
+    .Q(counter[1]),
+    .D(n16_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam counter_1_s0.INIT=1'b0;
+  DFFC counter_0_s0 (
+    .Q(counter[0]),
+    .D(n17_6),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam counter_0_s0.INIT=1'b0;
+  DFFC output_val_s0 (
+    .Q(sq_wave_d),
+    .D(n32_3),
+    .CLK(clk_d),
+    .CLEAR(reset_d) 
+);
+defparam output_val_s0.INIT=1'b0;
+  DFFP current_state_s2 (
+    .Q(current_state),
+    .D(n27_12),
+    .CLK(clk_d),
+    .PRESET(reset_d) 
+);
+defparam current_state_s2.INIT=1'b1;
+  ALU n12_s8 (
+    .SUM(n12_9_SUM),
+    .COUT(n12_12),
+    .I0(VCC),
+    .I1(m_ctrl_d[0]),
+    .I3(GND),
+    .CIN(counter[0]) 
+);
+defparam n12_s8.ALU_MODE=1;
+  ALU n12_s9 (
+    .SUM(n12_10_SUM),
+    .COUT(n12_14),
+    .I0(counter[1]),
+    .I1(m_ctrl_d[1]),
+    .I3(GND),
+    .CIN(n12_12) 
+);
+defparam n12_s9.ALU_MODE=1;
+  ALU n12_s10 (
+    .SUM(n12_11_SUM),
+    .COUT(n12_16),
+    .I0(counter[2]),
+    .I1(m_ctrl_d[2]),
+    .I3(GND),
+    .CIN(n12_14) 
+);
+defparam n12_s10.ALU_MODE=1;
+  ALU n19_s8 (
+    .SUM(n19_9_SUM),
+    .COUT(n19_12),
+    .I0(VCC),
+    .I1(n_ctrl_d[0]),
+    .I3(GND),
+    .CIN(counter[0]) 
+);
+defparam n19_s8.ALU_MODE=1;
+  ALU n19_s9 (
+    .SUM(n19_10_SUM),
+    .COUT(n19_14),
+    .I0(counter[1]),
+    .I1(n_ctrl_d[1]),
+    .I3(GND),
+    .CIN(n19_12) 
+);
+defparam n19_s9.ALU_MODE=1;
+  ALU n19_s10 (
+    .SUM(n19_11_SUM),
+    .COUT(n19_16),
+    .I0(counter[2]),
+    .I1(n_ctrl_d[2]),
+    .I3(GND),
+    .CIN(n19_14) 
+);
+defparam n19_s10.ALU_MODE=1;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* square_wave_gen */

@@ -1,0 +1,61 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.9"
+//Sat Nov 15 11:55:49 2025
+
+//Source file index table:
+//file0 "\/home/sonny/Documents/GitHub/FPGA/Tang\ Nano\ 20k/PPChu/fpga_project_1/src/eq1.vhd"
+//file1 "\/home/sonny/Documents/GitHub/FPGA/Tang\ Nano\ 20k/PPChu/fpga_project_1/src/eq2.vhd"
+`timescale 100 ps/100 ps
+module eq2 (
+  a,
+  b,
+  aeqb
+)
+;
+input [1:0] a;
+input [1:0] b;
+output aeqb;
+wire aeqb_d;
+wire [1:0] a_d;
+wire [1:0] b_d;
+wire VCC;
+wire GND;
+  IBUF a_0_ibuf (
+    .O(a_d[0]),
+    .I(a[0]) 
+);
+  IBUF a_1_ibuf (
+    .O(a_d[1]),
+    .I(a[1]) 
+);
+  IBUF b_0_ibuf (
+    .O(b_d[0]),
+    .I(b[0]) 
+);
+  IBUF b_1_ibuf (
+    .O(b_d[1]),
+    .I(b[1]) 
+);
+  OBUF aeqb_obuf (
+    .O(aeqb),
+    .I(aeqb_d) 
+);
+  LUT4 aeqb_d_s (
+    .F(aeqb_d),
+    .I0(a_d[0]),
+    .I1(b_d[0]),
+    .I2(a_d[1]),
+    .I3(b_d[1]) 
+);
+defparam aeqb_d_s.INIT=16'h9009;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* eq2 */

@@ -1,0 +1,11 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2ANR-18C" pn="GW2ANR-LV18QN88C8/I7">gw2anr18c-001</Device>
+    <FileList>
+        <File path="src/square_wave_gen.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/swg_testbench.vhd" type="file.vhdl" enable="1"/>
+    </FileList>
+</Project>

@@ -5,13 +5,13 @@
 //Part Number: GW2ANR-LV18QN88C8/I7
 //Device: GW2ANR-18
 //Device Version: C
-//Created Time: Wed 10 29 16:53:07 2025
+//Created Time: Thu 10 30 08:19:06 2025
 
 IO_LOC "scl" 10;
 IO_PORT "scl" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
 IO_LOC "sda" 11;
 IO_PORT "sda" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "reset_btn" 40;
+IO_LOC "reset_btn" 87;
 IO_PORT "reset_btn" PULL_MODE=UP BANK_VCCIO=1.8;
 IO_LOC "clk_27m" 4;
 IO_PORT "clk_27m" PULL_MODE=UP BANK_VCCIO=1.8;

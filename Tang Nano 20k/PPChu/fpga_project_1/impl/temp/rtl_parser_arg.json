@@ -1,0 +1,28 @@
+{
+ "Device" : "GW2ANR-18C",
+ "Files" : [
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq1.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/src/eq2_testbench.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/sonny/Documents/GitHub/FPGA/Tang Nano 20k/PPChu/fpga_project_1/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
